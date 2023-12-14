@@ -1,4 +1,4 @@
-window.addEventListener('load', function() {
+window.onload = function(){
 
   const promotionEl = document.querySelector('.promotion');
   const promotionToggleBtn = document.querySelector('.toggle-promotion');
@@ -18,4 +18,4 @@ window.addEventListener('load', function() {
     }
   });
 
-});
+};

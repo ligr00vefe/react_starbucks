@@ -1,9 +1,13 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom';
 
 import '../css/gnb.css'
 import '../js/gnb'
 
 const Header = () => {       
+
+  const { pathname } = useLocation();
+
   return (
     <header>
       <div className="inner">
@@ -331,14 +335,18 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div className="badges">
-        <div className="badge">
-          <img src="/images/badge1.jpg" alt="Badge" />
+      
+      { pathname !== '/signin' &&       
+        <div className="badges">
+          <div className="badge">
+            <img src="/images/badge1.jpg" alt="Badge" />
+          </div>
+          <div className="badge">
+            <img src="/images/badge2.jpg" alt="Badge" />
+          </div>
         </div>
-        <div className="badge">
-          <img src="/images/badge2.jpg" alt="Badge" />
-        </div>
-      </div>
+      }
+      
     </header>
   )
 }
