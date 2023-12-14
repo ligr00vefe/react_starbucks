@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
 
       <div id="to-top">
-        <div class="material-icons">arrow_upward</div>
+        <div className="material-icons">arrow_upward</div>
       </div>
       
     </footer>
